@@ -1,0 +1,293 @@
+html, body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+div{
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    font-size: 44px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: #006600;
+    text-align: center;
+    text-shadow: 1px 1px #666666;
+}
+h2{
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+    color: #006600;
+    text-align: center;
+    text-shadow: 1px 1px #666666;
+}
+h3{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #006600;
+}
+h4{
+    font-size: 20px;
+    color: #006600;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+h5{
+    font-size: 18px;
+    color: #006600;
+    font-weight: bold;
+}
+h6{
+    font-size: 16px;
+    font-weight: bolder;
+}
+a{
+    color: #663300;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: rgba(102,51,0,0.5); 
+}
+blockquote{
+    font-size: 1.4em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-family: Open Sans;
+    font-style: italic;
+    color: #333333;
+    padding: 1.1em 0px 1.1em 50px;
+    border-left:8px solid #006600;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+blockquote::before{
+    font-family: Arial;
+    content: "\201C";
+    color: #006600;
+    font-size: 4em;
+    position: absolute;
+    left: 0px;
+    top:-10px;
+    z-index: 1;
+}
+blockquote::after{
+    content: ''; 
+}
+blockquote span{
+    display:block;
+    color:#333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+    position:relative;
+    z-index: 1;
+}
+button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    background-color: #006600;
+    color: #ffffff;
+    border: 1px solid #663300;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
+}
+button a{
+    color: #ffffff;
+}
+button a:active{
+    color: #ffffff;
+}
+button a:hover{
+    background-color: rgba(0,102,0,0.4);
+}
+footer{
+    position: relative;
+    font-size: 11px;
+    color: #666666;
+    margin: 5% 0% 5% 20%;
+}
+/*This is the site navigation section*/
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    padding-top: 10px;
+    top: 0px;
+    left: 20px;
+    right: 0px;
+    max-height: 20%;
+    max-width: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+}
+.nav logo{
+    flex: 1;
+    background-color: #ffffff;
+    width: 100%;
+    padding-top: 10px;
+}
+.nav ul{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 8%;
+    padding-right: 32%;
+    background-color: #ffffff;
+}
+.nav li{
+    flex: 1;
+    font-weight: 600;
+    font-size: 28px;
+    font-family: 'Markazi Text', serif;
+    background-color: rgba(255,204,51,0.3);
+    border: 1px solid #663300;
+    padding: 5px 50px 0px 50px;
+    margin-left: 15%;
+    text-align: center;
+}
+.nav a{
+    color: #663300;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav a:hover{
+    color: rgba(102,51,0,0.5);
+}
+.nav a.selected{
+    color: #006600;
+}
+/*End of navigation section*/
+.section{
+    margin: 12% 20% 0% 20%;
+    background-color: #ffffff;
+    border-top: 4px solid rgba(102,102,102,0.3);
+    position: relative;
+    z-index: 1;
+}
+.title{
+    text-align: center;
+    margin-top: 3%;
+}
+.quote{
+    clear: both;
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgba(102,102,102,0.3);
+}
+/*This is the primary flex container with it's related flex boxes*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 3%;
+    padding-bottom: 10px;
+    border-bottom: 4px solid rgba(102,102,102,0.3);
+}
+.side{
+    text-align: left;
+    padding-left: 2px;
+}
+.side-img{
+    float: right;
+    padding-top: 30px;
+}
+.left{
+    float: left;
+    flex: 1;
+    padding-top: 10px;
+}
+.right{
+    text-align: left;
+    flex: 2;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.test-img{
+    padding: 30px;
+}
+.test{
+    padding-top: 50px;
+}
+/*This is the secondary flex container and related flex boxes*/
+.grid{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    border-bottom: 4px solid rgba(102,102,102,0.3);
+}
+.box-l{
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+.box-r{
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+    border-left: 1px solid rgba(102,102,102,0.3);
+}
+/*This turns the bulletpoints green and square*/
+.container ul{
+    list-style: none
+}
+.container li::before{
+    content: "\25AA"; 
+    color: #006600;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+.grid ul{
+    list-style: none
+}
+.grid li::before{
+    content: "\25AA"; 
+    color: #006600;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+/*This is the contact page flex container and boxes*/
+.sales{
+    margin-bottom: 40px;
+}
+.icon{
+    flex: 1;
+    padding-left: 80px;
+}
+.contact{
+    flex: 2;
+    text-align: left;
+    padding-bottom: 20px;
+}
+/*This controls the custom list style on the home page*/
+.action ul{
+    list-style-image: url("imgs/gb_sunflower_bullet.png");
+    list-style-position: outside;
+    padding-left: 30%;
+}
+.action li{
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+/*This provides need top margin for the fixed menu for anchor links*/
+.anchor{
+    display:block;
+    height: 130px; /* this is the height of my header */
+    margin-top: -130px;
+    visibility:hidden;
+}
